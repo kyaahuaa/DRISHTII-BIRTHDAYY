@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Drishti</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <!-- Surprise Popup (hidden by default) with photos -->
+  <div id="surprisePopup" class="surprise-popup">
+    <div class="popup-content">
+      <h1>🎉 SURPRISE! 🎉</h1>
+      <p class="surprise-text">Hope this made you smile 😊</p>
+      
+      <div class="popup-photos">
+        <h3>Some of my favourite photos of you</h3>
+        <div class="photo-grid">
+          <div class="photo-item">
+            <img src="drishti1.jpg" alt="Drishti photo 1" />
+          </div>
+          <div class="photo-item">
+            <img src="drishti2.jpg" alt="Drishti photo 2" />
+          </div>
+          <div class="photo-item">
+            <img src="drishti3.jpg" alt="Drishti photo 3" />
+          </div>
+          <div class="photo-item">
+            <img src="drishti4.jpg" alt="Drishti photo 4" />
+          </div>
+        </div>
+      </div>
+      
+      <button onclick="openSpecialPage()" class="click-here-btn">Click Here ❤️</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <header class="main-header">
+      <h1>Something for your birthday, Drishti, I have made 😊</h1>
+      <p class="subtitle">Made just for you, because you are really special.</p>
+    </header>
+
+    <!-- Surprise Button -->
+    <div class="surprise-btn">
+      <button onclick="showPopup()">Surprise 🎁</button>
+    </div>
+
+    <section class="card">
+      <h2>Happy Birthday, Drishti ❤️</h2>
+      <p class="message">
+        Today is your day, and this little website is just a small way to tell you how much you matter.
+        Hope this makes you smile at least a little. 
+      </p>
+    </section>
+
+    <section class="reasons">
+      <h2>Why you are special</h2>
+      <ul>
+        <li>You make even normal days feel different.</li>
+        <li>Your smile fixes a lot more than you think.</li>
+        <li>You are strong, kind, and way more important than you realise.</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>Made with a lot of overthinking and a lot of care, just for you. 🖤</p>
+    </footer>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('surprisePopup').style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function openSpecialPage() {
+      window.open('special.html', '_blank');
+      document.getElementById('surprisePopup').style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+  </script>
+</body>
+</html>
